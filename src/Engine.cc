@@ -21,7 +21,7 @@ PlayingState* play = new PlayingState();
 void Engine::init() {
 	console.writeLine("Init...");
 	Resources::load();
-	window.create(VideoMode(448, 596), "CS 128 PacMan Game");
+	window.create(VideoMode(448, 596), "PacMan Game");
 	console.writeLine("Created window");
 	// Originally: gamestates.addState(new PlayingState);
 	gamestates.addState(play);
